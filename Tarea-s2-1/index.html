@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <form class="signup">
+        <h1 class="title">Introduce tus datos para crear una cuenta</h1>
+        <p class="subtitle">Los valores marcados con un * son obligatorios</p>
+        <ul class="signup-list">
+            <li class="signup-list-title">NOMBRE*:</li>
+            <li><input placeholder="Introduce tu nombre..." type="text" required></li>
+            <li class="signup-list-title">PRIMER APELLIDO*:</li>
+            <li><input placeholder="Introduce tu primer apellido..." type="text" required></li>
+            <li class="signup-list-title">SEGUNDO APELLIDO:</li>
+            <li><input placeholder="Introduce tu segundo apellido..." type="email"></li>
+            <li class="signup-list-title">DNI*:</li>
+            <li><input class="dni" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" minlength="9" maxlength="9" placeholder="Introduce tu DNI..." type="text" required></li>
+        </ul>
+        <button class="signup-button" type="submit">REGISTRO</button>
+    </form>
+</body>
+</html>
